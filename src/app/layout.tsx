@@ -42,11 +42,6 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
-  verification: {
-    other: {
-      "google-site-verification": "N4FNEzmTBPGXP",
-    },
-  },
   category: "Health",
   openGraph: {
     title: "Home Nursing Services at Home | Nurse on Call 24/7 — Sufian Home Care",
@@ -106,7 +101,7 @@ const jsonLd = {
       address: { "@type": "PostalAddress", addressCountry: "PK" },
     },
     {
-      "@type": "WebSite",
+      "@type": "@type WebSite",
       "@id": `${SITE.url}/#website`,
       url: SITE.url,
       name: SITE.name,
@@ -130,6 +125,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <meta name="google-site-verification" content="N4FNEzmTBPGXP" />
+      </head>
       <body
         suppressHydrationWarning
         className={`${geistSans.variable} ${geistMono.variable} ${jakarta.variable} ${urdu.variable} font-sans antialiased bg-background text-foreground`}
