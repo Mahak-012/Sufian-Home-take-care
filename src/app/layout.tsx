@@ -42,6 +42,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
   },
+  verification: {
+    google: "N4FNEzmTBPGXP",
+  },
   category: "Health",
   openGraph: {
     title: "Home Nursing Services at Home | Nurse on Call 24/7 — Sufian Home Care",
